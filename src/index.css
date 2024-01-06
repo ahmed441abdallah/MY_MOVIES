@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #191C26 !important;
+
+}
+.card {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+  
+}
+
+.overlay-text {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  /* text-align: center; */
+}
+
+
+/* Pagination.css */
+.pagination-container {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+/* Styles for mobile devices with a maximum width of 767 pixels */
+@media screen and (max-width: 767px) {
+  /* For example: */
+  mobile-image {
+width: 100%;
+  }
+}
